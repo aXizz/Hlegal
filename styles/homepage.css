@@ -1,0 +1,67 @@
+
+.splash-screen {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0 0 12px 12px;
+}
+
+/*------------HERO---------*/
+.hero {
+    height: 100vh;
+    display: flex;
+    background-image: url("../images/UIKit/Assets/Symbol.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh auto;
+}
+
+.hero .legal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFFFFF;
+    padding: 0 30px;
+}
+
+.hero .scroll {
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    bottom: 30px;
+    transition: all .5s ease;
+}
+
+.hero .scroll:hover circle, .hero .scroll:hover path {
+    stroke: #F0145A;
+}
+
+/*------------HERO---------*/
+
+.head-wrapper {
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    padding-top: 50px;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-column {
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 630px) {
+    .main-column {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

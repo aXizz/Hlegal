@@ -1,0 +1,199 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+/*-------HEADER-----------*/
+
+
+/*---left side---*/
+
+
+header .left-side {
+    display: flex;
+}
+
+header .left-side .slash {
+    margin-left: 4px;
+    width: 21px;
+    height: 47px;
+    background-image:url("../images/Service entry/Header/Assets/Slash.svg");
+}
+
+header .left-side .services {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+header .services {
+    display: none;
+}
+/*----right side-----*/
+
+
+header .right-side .contact {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+header .right-side .lang-switch {
+    display: flex;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+header .lang-switch a {
+    display: block;
+    width: 33px;
+    height: 25px;
+    border-radius: 8px;
+    padding: 5px 7px;
+}
+
+header .lang-switch .active {
+    background-color: #F0145A;
+}
+
+header .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background: #E6E6F0;
+}
+
+header .contact address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+}
+
+header .contact .tel {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+}
+
+header .contact .facebook {
+    width: 24px;
+    height: 24px;
+}
+
+header .contact .facebook path:hover {
+    fill: #F0145A;
+}
+
+header .lang-switch a, .tel, nav a {
+    color: #FFFFFF;
+}
+
+header nav {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+}
+
+header nav a {
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
+}
+header .burger {
+    display: none;
+}
+
+@media screen and (min-width: 630px) and (max-width: 980px) {
+    header .left-side {
+        position: absolute;
+        top: 105px;
+}
+    header nav {
+        position: absolute;
+        top: 195px;
+    }
+
+    header .lang-switch a:first-child {
+        margin-left: 0;
+    }
+
+    header nav a:first-child {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header nav, address, .dot, .facebook {
+        display: none;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        padding: 15px 15px;
+    }
+
+    header .left-side {
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+
+    header .left-side .slash {
+        width: 12px;
+        height: 26px;
+        background-size: 12px 26px;
+    }
+    header .left-side .logo {
+        width: 70px;
+        height: 32px;
+    }
+
+    header .left-side .services {
+        display: block;
+        margin-left: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    header .right-side {
+        margin: -15px -30px 0 -30px;
+        padding: 10px 15px;
+        background-color: rgba(245, 245, 250, 0.2);
+    }
+
+    header .right-side .contact {
+        justify-content: space-between;
+    }
+
+    header .burger {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50px;
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/Homepage/Header/Button/Hamburger.svg");
+    }
+}
+
+/*-----------EXPERIENCE----------------*/
