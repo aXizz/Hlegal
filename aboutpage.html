@@ -25,8 +25,8 @@
         <div class="right-side">
             <div class="contact">
                 <div class="lang-switch">
-                    <a  href="#">УК</a>
-                    <a  href="#">РУ</a>
+                    <a class="hover" href="#">УК</a>
+                    <a class="hover" href="#">РУ</a>
                     <a class="active" href="#">EN</a>
                 </div>
                 <div class="dot"></div>
@@ -47,7 +47,7 @@
                 <a class="item" href="#">publications</a>
                 <a class="item" href="#">contact</a>
             </nav>
-            <div class="burger"></div>
+            <div class="burger" onclick="document.getElementById('mobileMenu').classList.toggle('show');"></div>
         </div>
     </header>
 </div>
@@ -81,9 +81,9 @@
     </div>
     <h3 class="title">Quality is what we care about the most.</h3>
 </div>
-<div class="achievements main-column">
-    <h3 class="title">achievements</h3>
-    <div class="row">
+<div class="achievements">
+    <h3 class="title main-column">achievements</h3>
+    <div class="row main-column">
         <a href="#" class="item" style="background-color: #FFFFFF;">
             <img src="./images/About/Achievments/Achievment-1.png" alt="" class="logo">
         </a>
@@ -97,7 +97,7 @@
             <img src="./images/About/Achievments/Achievment-4.png" alt="" class="logo">
         </a>
     </div>
-    <div class="paginator">
+    <div class="paginator main-column">
         <div class="circle active"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -129,6 +129,30 @@
         </div>
         <div class="company-hide">© 2021 HLEGAL Law company, LLC</div>
     </footer>
+</div>
+
+<!--------MOBILE MENU-------->
+
+<div class="mobileMenu" id="mobileMenu">
+    <nav>
+        <button class="cross" onclick="document.getElementById('mobileMenu').classList.toggle('show');"></button>
+        <ul>
+            <li>
+                <a href="./aboutpage.html">about us</a></li>
+            <li>
+                <a href="#">послуги</a>
+            </li>
+            <li>
+                <a href="#">команда</a>
+            </li>
+            <li>
+                <a href="#">публікації</a>
+            </li>
+            <li>
+                <a href="#">контакти</a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>

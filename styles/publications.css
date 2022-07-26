@@ -59,7 +59,7 @@
     color: #24A3FF;
 }
 
-.publications .grid h2:hover {
+.publications .grid a:hover h2 {
     color: #F0145A;
 }
 

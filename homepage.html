@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/clients.css">
@@ -29,14 +29,14 @@
             <div class="right-side">
                 <div class="contact">
                     <div class="lang-switch">
-                        <a  href="#">УК</a>
-                        <a  href="#">РУ</a>
+                        <a class="hover" href="#">УК</a>
+                        <a class="hover" href="#">РУ</a>
                         <a class="active" href="#">EN</a>
                     </div>
                     <div class="dot"></div>
                     <address>Kyiv, Mechnikova str, 14/1</address>
                     <div class="dot"></div>
-                    <a href="#" class="tel">0800 211 927</a>
+                    <a href="tel:0800211927" class="tel">0800 211 927</a>
                     <div class="dot"></div>
                     <a href="#" class="facebook">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,20 +51,20 @@
                     <a class="item" href="#">publications</a>
                     <a class="item" href="#">contact</a>
                 </nav>
-                <div class="burger"></div>
+                <div class="burger" onclick="document.getElementById('mobileMenu').classList.toggle('show');"></div>
             </div>
         </header>
     </div>
     <div class="hero">
         <div class="legal">you legal solutions provider</div>
-        <a class="scroll" href="#">
+        <a class="scroll" href="#experience">
             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
                 <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
             </svg>
         </a>
     </div>
-    <div class="experience content-column">
+    <div class="experience content-column" id="experience">
             <ul class="menu">
                 <li class="active">Consistent</li>
                 <li>Customer oriented</li>
@@ -178,45 +178,47 @@
     </div>
     <div class="grid">
         <a href="#" class="item" style="background-color: #1C4280;">
-            <div class="logo" style="background-image: url('./images/Clients/hillel.png')"></div>
+            <img src="./images/Clients/hillel.png" alt="hillel">
         </a>
         <a href="#" class="item" style="background-color: #143646">
-            <div class="logo" style="background-image: url('./images/Clients/wannabiz.png')"></div>
+            <img src="./images/Clients/wannabiz.png" alt="wannabiz">
         </a>
         <a href="#" class="item" style="background-color: #F48B30;">
-            <div class="logo" style="background-image: url('./images/Clients/tapgerine.png')"></div>
+            <img src="./images/Clients/tapgerine.png" alt="tapgerine">
         </a>
         <a href="#" class="item" style="background-color: #9E4DC3;">
-            <div class="logo" style="background-image: url('./images/Clients/3dlook.png')"></div>
+            <img src="./images/Clients/3dlook.png" alt="3dlook">
         </a>
         <a href="#" class="item" style="background-color: #FD9339;">
-            <div class="logo" style="background-image: url('./images/Clients/orangear.png')"></div>
+            <img src="./images/Clients/orangear.png" alt="orangear">
         </a>
         <a href="#" class="item" style="background-color: #E2E2E4;">
-            <div class="logo" style="background-image: url('./images/Clients/adtelligent.png')"></div>
+            <img src="./images/Clients/adtelligent.png" alt="adtelligent">
         </a>
         <a href="#" class="item" style="background-color: #C71C36;">
-            <div class="logo" style="background-image: url('./images/Clients/clickky.png')"></div>
+            <img src="./images/Clients/clickky.png" alt="clickky">
         </a>
         <a href="#" class="item" style="background-color: #DCF3F9;">
-            <div class="logo" style="background-image: url('./images/Clients/eco-leasing.png')"></div>
+            <img src="./images/Clients/eco-leasing.png" alt="leasing">
         </a>
         <a href="#" class="item" style="background-color: #EAEAEA;">
-            <div class="logo" style="background-image: url('./images/Clients/ingratek.png')"></div>
+            <img src="./images/Clients/ingratek.png" alt="ingratek">
         </a>
         <a href="#" class="item" style="background-color: #282240;">
-            <div class="logo" style="background-image: url('./images/Clients/city-par.png')"></div>
+            <img src="./images/Clients/city-par.png" alt="city-par">
         </a>
         <a href="#" class="item" style="background-color: #1D4568;">
-            <div class="logo" style="background-image: url('./images/Clients/artprint.png')"></div>
+            <img src="./images/Clients/artprint.png" alt="artprint">
         </a>
         <a href="#" class="item" style="background-color: #000;">
-            <div class="logo" style="background-image: url('./images/Clients/ultimatecard.png')"></div>
+            <img src="./images/Clients/ultimatecard.png" alt="ultimatecard">
         </a>
     </div>
 </div>
 
 <!----------------PUBLICATIONS--------------------->
+
+
 <div class="publications-wrapper">
     <div class="publications main-column">
         <div class="header">
@@ -277,6 +279,30 @@
         </div>
         <div class="company-hide">© 2021 HLEGAL Law company, LLC</div>
     </footer>
+</div>
+
+<!---------MOBILE MENU-------->
+
+<div class="mobileMenu" id="mobileMenu">
+    <nav>
+        <button class="cross" onclick="document.getElementById('mobileMenu').classList.toggle('show');"></button>
+        <ul>
+            <li>
+                <a href="./aboutpage.html">about us</a></li>
+            <li>
+                <a href="#">послуги</a>
+            </li>
+            <li>
+                <a href="#">команда</a>
+            </li>
+            <li>
+                <a href="#">публікації</a>
+            </li>
+            <li>
+                <a href="#">контакти</a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>

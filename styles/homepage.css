@@ -14,6 +14,16 @@ header .services {
     display: none;
 }
 
+header .left-side .slash {
+    display: none;
+}
+
+header .burger:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
 /*------------HERO---------*/
 .hero {
     height: 100vh;
@@ -49,6 +59,11 @@ header .services {
     stroke: #F0145A;
 }
 
+@media screen and (max-width: 630px) {
+    header .burger {
+        background-image: url("../images/Hamburger-dark.svg");
+    }
+}
 /*--------EXPERIENCE-----------*/
 
 .experience {
@@ -82,7 +97,6 @@ header .services {
     background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
 }
 
 .experience .menu li:hover {
@@ -154,14 +168,14 @@ header .services {
     height: 10px;
     margin: 0 20px;
     background: #CACADB;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 0 0 12px 12px;
 }
 
 .epilogue .bottom {
     height: 10px;
     margin: 0 40px;
     background: #E7E7F2;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 0 0 12px 12px;
 }
 
 /*----------КОМАНДА--------*/
@@ -211,7 +225,6 @@ header .services {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     margin-bottom: 30px;
 }
 

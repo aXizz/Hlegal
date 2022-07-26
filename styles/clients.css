@@ -37,6 +37,13 @@
     background-repeat: no-repeat;
 }
 
+.clients .grid img {
+    object-fit: contain;
+    height: 60px;
+    width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
     .clients .grid {
         grid-template-columns: repeat(3, 1fr);

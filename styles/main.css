@@ -115,6 +115,10 @@ header.light .lang-switch .active {
     color: #FFFFFF;
 }
 
+header .lang-switch .hover:hover {
+    color: #F0145A;
+}
+
 header .dot {
     width: 6px;
     height: 6px;
@@ -138,12 +142,16 @@ header .contact .tel {
     text-align: right;
 }
 
+header .contact .tel:hover {
+    color: #F0145A;
+}
+
 header .contact .facebook {
     width: 24px;
     height: 24px;
 }
 
-header .contact .facebook path:hover {
+header .contact .facebook:hover path {
     fill: #F0145A;
 }
 
@@ -236,7 +244,6 @@ header .burger {
     }
 
     header .left-side .services {
-        display: block;
         margin-left: 4px;
         font-weight: 400;
         font-size: 20px;
@@ -254,13 +261,17 @@ header .burger {
     }
 
     header .burger {
-        display: block;
+        display: flex;
         position: absolute;
         right: 15px;
         top: 50px;
         width: 32px;
         height: 32px;
-        background-image: url("../images/Homepage/Header/Button/Hamburger.svg");
+        background-image: url("../images/Hamburger-light.svg");
+    }
+    header .burger:hover{
+        background-color: #E6E6F0;
+        border-radius: 5px;
     }
 }
 
@@ -328,7 +339,7 @@ header .burger {
     gap: 0 10px;
 }
 
-.footer .bottom .facebook path:hover {
+.footer .bottom .facebook:hover path {
     fill: #F0145A;
 }
 
@@ -338,6 +349,10 @@ header .burger {
     line-height: 20px;
     text-align: right;
     color: #46466E;
+}
+
+.footer .bottom .tel:hover{
+    color: #F0145A;
 }
 
 .footer .bottom .email {
@@ -387,4 +402,86 @@ header .burger {
         flex-direction: column;
         gap: 10px 0;
     }
+}
+
+/*--------PAGINATOR HOVER-------*/
+
+div.paginator div.circle:hover {
+    opacity: 1;
+}
+
+/*--------MOBILE-MENU-------*/
+
+
+
+.mobileMenu {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #32326470;
+}
+
+.mobileMenu.show {
+    display: block;
+}
+
+.mobileMenu nav {
+    position: absolute;
+    width: calc(100% - 16px);
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+    border-radius: 12px 12px 0 0;
+    background-color: #FFFFFF;
+}
+
+.mobileMenu ul {
+    padding-top: 64px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.mobileMenu ul li a {
+    display: block;
+    padding: 7px 0;
+    margin-bottom: 12px;
+    background: #F5F5FA;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #24A3FF;
+}
+
+.mobileMenu ul li:active a {
+    background-color: #E6E6F0;
+    color: #F0145A;
+    cursor: pointer;
+}
+
+.mobileMenu ul li:hover a{
+    color: #F0145A;
+    cursor: pointer;
+}
+
+.mobileMenu nav .cross {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/Button/Close.svg");
+    right: 19px;
+    top: 19px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobileMenu nav .cross:active{
+    background-color: #E6E6F0;
 }
