@@ -1,0 +1,100 @@
+
+.services {
+    padding-bottom: 60px;
+}
+
+.services .header {
+    margin-bottom: 60px;
+}
+
+.services .header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+}
+
+.services .header a:hover {
+    color: #F0145A;
+}
+
+.services .header a:hover path {
+    stroke: #F0145A;
+}
+
+.services .header h2 {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*-----------TABLE GRID--------------*/
+
+.services .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+}
+
+.services .item .icon {
+    padding: 14px;
+    width: 92px;
+    height: 92px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 30px;
+}
+
+.services .item h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #24A3FF;
+    margin-bottom: 15px;
+}
+
+.services .item .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.services .item a:hover h3 {
+    color: #F0145A;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .services .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .services .header {
+        margin-bottom: 30px;
+    }
+
+    .services .header h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .services .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+}
