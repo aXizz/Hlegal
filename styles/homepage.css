@@ -4,11 +4,21 @@
     border-radius: 0 0 12px 12px;
 }
 
+/*------HEADER-------*/
+.header-wrapper {
+    position: absolute;
+    width: 100%;
+}
+
+header .services {
+    display: none;
+}
+
 /*------------HERO---------*/
 .hero {
     height: 100vh;
     display: flex;
-    background-image: url("../images/UIKit/Assets/Symbol.svg");
+    background-image: url("../images/Homepage/Symbol.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vh auto;
@@ -39,29 +49,218 @@
     stroke: #F0145A;
 }
 
-/*------------HERO---------*/
+/*--------EXPERIENCE-----------*/
 
-.head-wrapper {
-    position: absolute;
-    width: 100%;
-}
-
-header {
-    padding-top: 50px;
-    max-width: 1600px;
+.experience {
     display: flex;
-    justify-content: space-between;
+    margin-top: 60px;
+    padding-bottom: 60px;
 }
 
-.main-column {
+
+.experience .menu {
+    flex: 0 0 435px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 60px;
-    padding-left: 60px;
-    margin: 0 auto;
+}
+
+.experience .menu li {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: right;
+    color: #B3B3BA;
+}
+
+.experience .menu li:last-child {
+    margin-bottom: 0;
+}
+
+.experience .menu li.active {
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.experience .menu li:hover {
+    color: #F0145A;
+    cursor: pointer;
+}
+
+.experience .content {
+    padding: 43px 0 43px 60px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.experience .content .title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.experience .content .text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience .menu {
+        display: flex;
+        flex: auto;
+        overflow: scroll;
+        padding-left: 60px;
+        margin-right: -60px;
+        margin-left: -60px;
+    }
+    .experience .menu li {
+        margin-right: 30px;
+        white-space: nowrap;
+    }
+
+    .experience .content {
+        border-left: none;
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+        padding: 60px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 630px) {
-    .main-column {
-        padding-right: 30px;
+    .content .menu {
         padding-left: 30px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .content .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+/*------------EPILOGUE------------*/
+
+.epilogue .top {
+    height: 10px;
+    margin: 0 20px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.epilogue .bottom {
+    height: 10px;
+    margin: 0 40px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
+
+/*----------КОМАНДА--------*/
+
+.team {
+    margin-top: 60px;
+}
+
+.team .slide {
+    display: flex;
+    background: #F5F5FA;
+    border-radius: 12px;
+}
+
+.team .slide img {
+    object-fit: cover;
+    width: 400px;
+    border-radius: 12px 0 0 12px;
+}
+
+.team .text {
+    padding: 30px;
+}
+
+.team .text a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    margin-bottom: 5px;
+}
+
+.team .text a:hover {
+    color: #F0145A;
+}
+
+.team .text a:hover path {
+    stroke: #F0145A;
+}
+
+.team .text h1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.team .text .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+    margin-bottom: 6px;
+}
+
+.team .text .job-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B3B3BA;
+}
+
+.team .paginator {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team .paginator .circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #24A3FF;
+    opacity: 0.2;
+}
+
+.team .paginator .active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .team .slide {
+        flex-direction: column;
+    }
+    .team .slide img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .team {
+        margin-top: 30px;
     }
 }

@@ -8,8 +8,47 @@
     list-style: none;
 }
 
+/*--------COLUMNS--------*/
+
+.main-column {
+    max-width: 1600px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 0 auto;
+}
+
+
+.content-column {
+    max-width: 1600px;
+    padding-right: 180px;
+    padding-left: 180px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1124px) {
+    .content-column {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .main-column, .content-column {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
 
 /*-------HEADER-----------*/
+
+
+header {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /*---left side---*/
@@ -23,7 +62,7 @@ header .left-side .slash {
     margin-left: 4px;
     width: 21px;
     height: 47px;
-    background-image:url("../images/Service entry/Header/Assets/Slash.svg");
+    background-image:url("../images/Homepage/Header/Slash.svg");
 }
 
 header .left-side .services {
@@ -33,9 +72,11 @@ header .left-side .services {
     color: #FFFFFF;
 }
 
-header .services {
-    display: none;
+header.light .left-side .services {
+    color: #323264;
 }
+
+
 /*----right side-----*/
 
 
@@ -43,6 +84,10 @@ header .right-side .contact {
     display: flex;
     align-items: center;
     color: #FFFFFF;
+}
+
+header.light .right-side .contact {
+    color: #B3B3BA;
 }
 
 header .right-side .lang-switch {
@@ -64,6 +109,10 @@ header .lang-switch a {
 
 header .lang-switch .active {
     background-color: #F0145A;
+}
+
+header.light .lang-switch .active {
+    color: #FFFFFF;
 }
 
 header .dot {
@@ -98,9 +147,21 @@ header .contact .facebook path:hover {
     fill: #F0145A;
 }
 
-header .lang-switch a, .tel, nav a {
+header .lang-switch a,
+header .tel,
+header nav .item {
     color: #FFFFFF;
 }
+
+header.light nav .item {
+    color: #24A3FF;
+}
+
+header.light .lang-switch a,
+header.light .tel {
+    color: #B3B3BA;
+}
+
 
 header nav {
     margin-top: 16px;
@@ -110,11 +171,12 @@ header nav {
     text-align: right;
 }
 
-header nav a {
+header nav .item {
     margin-left: 15px;
 }
 
-header nav a:hover {
+header nav .item:hover,
+header nav .item.active {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
 }
@@ -123,6 +185,10 @@ header .burger {
 }
 
 @media screen and (min-width: 630px) and (max-width: 980px) {
+    header {
+        height: 220px;
+    }
+
     header .left-side {
         position: absolute;
         top: 105px;
@@ -142,7 +208,10 @@ header .burger {
 }
 
 @media screen and (max-width: 630px) {
-    header nav, address, .dot, .facebook {
+    header nav,
+    header address,
+    .dot,
+    header .facebook {
         display: none;
     }
 
@@ -172,7 +241,6 @@ header .burger {
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        color: #FFFFFF;
     }
 
     header .right-side {
@@ -196,4 +264,127 @@ header .burger {
     }
 }
 
-/*-----------EXPERIENCE----------------*/
+/*-------------FOOTER----------------*/
+
+.footer-wrapper {
+    background: #F5F5FA;
+    padding: 30px 0;
+}
+
+.footer .top {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #E6E6F0;
+    padding-top: 30px;
+}
+
+.footer .top .location {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.footer .location address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+}
+
+.footer .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B3B3BA;
+}
+
+.footer .top .map {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+}
+
+.footer .top .map:hover {
+    color: #F0145A;
+}
+
+
+.footer .top .company {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #B3B3BA;
+}
+
+.footer .bottom {
+    margin-top: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.footer .bottom .facebook path:hover {
+    fill: #F0145A;
+}
+
+.footer .bottom .tel {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #46466E;
+}
+
+.footer .bottom .email {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24A3FF;
+}
+
+.footer .bottom .email:hover {
+    color: #F0145A;
+}
+
+.footer .company-hide {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B3B3BA;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .top .company {
+        display: none;
+    }
+    .footer .company-hide {
+        display: flex;
+    }
+
+    .footer .bottom {
+        margin: 21px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .footer .top .location {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer .bottom {
+        flex-direction: column;
+        gap: 10px 0;
+    }
+}
