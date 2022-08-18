@@ -1,3 +1,9 @@
+.spacer {
+    padding-top: 176px;
+    height: 60px;
+}
+
+
 
 .services {
     padding-bottom: 60px;
@@ -72,6 +78,11 @@
 }
 
 
+@media screen and (max-width: 980px) {
+    .spacer {
+        padding-top: 280px;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -96,5 +107,8 @@
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }
-
+    .spacer {
+        padding-top: 132px;
+        height: 30px;
+    }
 }
