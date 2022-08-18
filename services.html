@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/clients.css">
-    <link rel="stylesheet" href="styles/publications.css">
-    <title>Homepage</title>
+    <title>Services</title>
 </head>
 <body>
 <div class="splash-screen">
@@ -46,7 +45,7 @@
                 </div>
                 <nav>
                     <a class="item" href="./aboutpage.html">about us</a>
-                    <a class="item" href="./services.html">services</a>
+                    <span class="item active" href="#">services</span>
                     <a class="item" href="./team.html">team</a>
                     <a class="item" href="#">publications</a>
                     <a class="item" href="./contact.html">contact</a>
@@ -55,36 +54,13 @@
             </div>
         </header>
     </div>
-    <div class="hero">
-        <div class="legal">you legal solutions provider</div>
-        <a class="scroll" href="#experience">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
-                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
-            </svg>
-        </a>
-    </div>
-    <div class="experience content-column" id="experience">
-            <ul class="menu">
-                <li class="active">Consistent</li>
-                <li>Customer oriented</li>
-                <li>Innovative</li>
-                <li>Business oriented</li>
-            </ul>
-        <div class="content">
-            <div class="title">We turn the idea of legal services</div>
-            <div class="text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</div>
-        </div>
-    </div>
 
-<!--    ----SERVICES--------->
+
+    <!--    ----SERVICES--------->
 
     <div class="services main-column">
+        <div class="spacer"></div>
         <div class="header">
-            <a href="./services.html">Services<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
-                </svg>
-            </a>
             <h2>What can we do better than others?</h2>
         </div>
         <div class="grid">
@@ -150,31 +126,6 @@
     <div class="top"></div>
     <div class="bottom"></div>
 </div>
-
-<!----------КОМАНДА---------->
-
-<div class="team main-column">
-    <div class="slide">
-        <img src="./images/Team_photos/Team-1.jpg" alt="team">
-        <div class="text">
-            <a href="./team.html">Команда<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
-            </svg>
-            </a>
-            <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
-            <p class="name">Олександр Олександровський</p>
-            <p class="job-title">Керуючий партнер</p>
-        </div>
-    </div>
-    <div class="paginator">
-        <div class="circle active"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-</div>
-
-<!---------CLIENTS----------->
-
 <div class="clients">
     <div class="header">
         <h2>They already trust us</h2>
@@ -218,47 +169,6 @@
         </a>
     </div>
 </div>
-
-<!----------------PUBLICATIONS--------------------->
-
-
-<div class="publications-wrapper">
-    <div class="publications main-column">
-        <div class="header">
-            <a href="#">Publications<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
-            </svg>
-            </a>
-            <h2>We have something to tell</h2>
-        </div>
-        <div class="grid">
-            <a class="one" href="#">
-                <img src="./images/Publication/Publication-1.jpg" alt="">
-                <h2>Equity associate</h2>
-                <p class="data">April 22</p>
-                <div class="line"></div>
-                <p class="text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-            </a>
-            <a class="two" href="#">
-                <img src="./images/Publication/Publication-2.jpg" alt="">
-                <h2>Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h2>
-                <p class="data">September 29</p>
-                <div class="line"></div>
-                <p class="text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-            </a>
-            <a class="three" href="#">
-                <img src="./images/Publication/Publication-3.jpg" alt="">
-                <h2>Millennial Testament</h2>
-                <p class="data">August 19</p>
-                <div class="line"></div>
-                <p class="text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-            </a>
-        </div>
-    </div>
-</div>
-
-<!---------FOOTER-------------->
-
 <div class="footer-wrapper">
     <footer class="footer main-column">
         <div class="top">
@@ -284,28 +194,5 @@
     </footer>
 </div>
 
-<!---------MOBILE MENU-------->
-
-<div class="mobileMenu" id="mobileMenu">
-    <nav>
-        <button class="cross" onclick="document.getElementById('mobileMenu').classList.toggle('show');"></button>
-        <ul>
-            <li>
-                <a href="./aboutpage.html">about us</a></li>
-            <li>
-                <a href="#">послуги</a>
-            </li>
-            <li>
-                <a href="#">команда</a>
-            </li>
-            <li>
-                <a href="#">публікації</a>
-            </li>
-            <li>
-                <a href="#">контакти</a>
-            </li>
-        </ul>
-    </nav>
-</div>
 </body>
 </html>
