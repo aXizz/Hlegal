@@ -159,6 +159,10 @@
     background-color: #FFFFFF;
 }
 
+.publications .buttons-wrapper a:hover {
+    background-color: #F5F5FA;
+}
+
 
 
 .publications .butt-wrapp {
@@ -178,4 +182,12 @@
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.publications .butt-wrapp button:hover {
+    background: #0085FF;
+}
+
+.publications .butt-wrapp button:active {
+    background: #006CCF;
 }

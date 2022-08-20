@@ -10,11 +10,7 @@
     width: 100%;
 }
 
-header .services {
-    display: none;
-}
-
-header .left-side .slash {
+.splash-screen .header-wrapper .left-side .homepage {
     display: none;
 }
 

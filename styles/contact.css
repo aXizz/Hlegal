@@ -59,10 +59,12 @@ input, textarea
 .position .social {
     padding-top: 30px;
     display: flex;
+    width: 155px;
     gap: 10px;
+    align-items: center;
 }
 
-.position .social .facebook:hover path {
+.position .social:hover path {
     fill: #F0145A;
 }
 
@@ -76,7 +78,7 @@ input, textarea
     color: #24A3FF;
 }
 
-.position .our_page:hover {
+.position .social:hover .our_page{
     color: #F0145A;
 }
 
@@ -126,8 +128,8 @@ input, textarea
 /*-------эксперимент-------*/
 
 .enter-fields input:focus::-webkit-input-placeholder {
-    text-indent: 500px;
-    transition: text-indent 0.5s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 /*-------------------------*/
@@ -172,6 +174,7 @@ input, textarea
 .enter-fields button:active {
     background: #006CCF;
 }
+
 @media screen and (max-width: 980px) {
     .info {
         grid-template-columns: 1fr;

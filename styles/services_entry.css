@@ -34,6 +34,14 @@
     border: none;
 }
 
+.services .item button:hover {
+    background: #0085FF;
+}
+
+.services .item button:active {
+    background: #006CCF;
+}
+
 .services .title {
     padding: 30px 0 15px 0;
     text-align: left;

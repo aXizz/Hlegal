@@ -74,6 +74,10 @@ h1 {
     stroke: #F0145A;
 }
 
+.team .item:hover h2 {
+    color: #F0145A;
+}
+
 .team .arrow svg {
     margin-top: 9px;
 }

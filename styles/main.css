@@ -107,6 +107,14 @@ header .lang-switch a {
     padding: 5px 7px;
 }
 
+header .lang-switch span {
+    display: block;
+    width: 33px;
+    height: 25px;
+    border-radius: 8px;
+    padding: 5px 7px;
+}
+
 header .lang-switch .active {
     background-color: #F0145A;
 }

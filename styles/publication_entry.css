@@ -118,10 +118,18 @@
     border-radius: 12px;
     padding: 9px;
 }
+
+.info .pic_wrapper .item:hover {
+    background-color: #EDEDF7;
+}
+
+
 .pic_wrapper .item img {
     height: 24px;
     width: 24px;
 }
+
+
 
 @media screen and (max-width: 630px){
     .info {
