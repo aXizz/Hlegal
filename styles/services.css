@@ -2,8 +2,14 @@
     padding-top: 176px;
     height: 60px;
 }
+.main-column .left-side .slash {
+    display: block;
+}
 
-
+.main-column .services {
+    display: block;
+    padding-right: 4px;
+}
 
 .services {
     padding-bottom: 60px;
